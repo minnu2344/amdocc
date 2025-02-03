@@ -1,0 +1,21 @@
+{
+    "name": "chrome-extension",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "vite",
+        "build": "vite build && npm run copy-assets",
+        "serve": "vite preview",
+        "copy-assets": "node copy-files.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@crxjs/vite-plugin": "^1.0.14",
+        "@types/chrome": "^0.0.299",
+        "vite": "^2.9.18"
+    }
+}

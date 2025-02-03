@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Text Selector</title>
+        <link
+            rel="stylesheet"
+            href="./styles_extension.css"
+            type="text/css"
+        />
+    </head>
+    <body>
+        <h2>Fact Checker</h2>
+        <textarea
+            id="selectedText"
+            placeholder="Selected text will appear here..."
+            readonly
+        ></textarea>
+        <div class="button-container">
+            <button id="getSelectedText">Select Text</button>
+            <button id="clearText">Clear</button>
+            <button id="submitText">Check Facts</button>
+        </div>
+        <div
+            id="resultsContainer"
+            class="results-container"
+        ></div>
+        <div
+            class="loader-container"
+            id="loaderContainer"
+        >
+            <div class="loader"></div>
+        </div>
+
+        <script
+            type="module"
+            src="./popup.ts"
+        ></script>
+    </body>
+</html>
